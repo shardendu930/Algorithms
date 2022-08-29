@@ -2,7 +2,7 @@
 using namespace std;
 
 // algorithm to search data in ascending order arranged array
-int binary_search(int *arr, int len, int key){
+int binary_search_asc(int *arr, int len, int key){
     int start = 0, mid, end = len - 1;
     while(end >= start){
         mid = start + ((end - start) / 2);
@@ -29,7 +29,7 @@ int main(){
     int len, key;
     cout << "Enter length of array : ";
     cin >> len;
-    int *arr = new int[len];
+    int *arr = new int(len);
     cout << "Enter elements in array : ";
     for(int i = 0; i < len; i++)    cin >> *(arr + i);
     cout << "Enter element to find : ";
