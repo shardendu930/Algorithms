@@ -26,14 +26,9 @@ int binary_search(int *arr, int len, int key){
 }
 
 int main(){
-    int len, key;
-    cout << "Enter length of array : ";
-    cin >> len;
-    int *arr = new int(len);
-    cout << "Enter elements in array : ";
-    for(int i = 0; i < len; i++)    cin >> *(arr + i);
-    cout << "Enter element to find : ";
-    cin >> key;
+    int arr[] = {1, 3, 5, 6, 8, 9, 12, 15};
+    int len = sizeof(arr)/sizeof(int);
+    int key = 5;
     int index = binary_search(arr, len, key);
     if(index == -1) cout << "Element not found.";
     else cout << "Element found at index " << index;
