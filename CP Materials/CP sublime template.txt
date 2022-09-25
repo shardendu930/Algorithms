@@ -16,7 +16,7 @@ typedef long double ld;
 typedef string str;
 
 void solve(){
-	
+	$0
 }
 
 int main(){
@@ -26,11 +26,11 @@ int main(){
 	#endif // ONLINE_JUDGE
 
 	ios::sync_with_stdio(false);
-  	cin.tie(0);
+	cin.tie(0);
 	int tt;
 	cin >> tt;
 	while(tt--){
-		$0
+		solve();
 	}
 	cerr << "time taken : " << (float)clock()/CLOCKS_PER_SEC << " secs" << endl;
 	return 0;
