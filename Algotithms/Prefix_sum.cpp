@@ -4,7 +4,6 @@ using namespace std;
 void print_arr(int *, int);
 void prefix_sum(int *, int*, int);
 
-// Driver Code
 int main(){
     int n;
     cout << "Enter size of array : ";
